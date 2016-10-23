@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastro de Clientes</title>
+        <meta name="autor"  content=""ÉDIPO>
+        <meta name="description" content="exercicio">
+        <link rel="stylesheet" href="estilo.css">
+<body>
+<fieldset>
+ <legend>Dados do Cliente</legend>
+    <table class="tabelaEditavel">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>João Adalberto</td>
+                <td>joao@email.com</td>
+                <td>(48) 9999-9999</td>
+                <td>
+                    <input type="checkbox" name="selecionado">
+                </td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Joséfredo Melo</td>
+                <td>meloso@email.com</td>
+                <td>(48) 8888-8888</td>
+                <td>
+                    <input type="checkbox" name="selecionado">
+                </td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>José João</td>
+                <td>jj@email.com</td>
+                <td>(48) 5555-5555</td>
+                <td>
+                    <input type="checkbox" name="selecionado">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</fieldset>
+<input type="button" value="Novo Cliente">
+<input type="button" value="Excluir">
+<input type="button" value="Editar">
+
+</body>
+<style type="text/css">
+    * {
+    font-family:Consolas
+}
+
+.tabelaEditavel {
+    border:solid 1px;
+    width:100%
+}
+
+.tabelaEditavel td {
+    border:solid 1px;
+}
+
+.tabelaEditavel .celulaEmEdicao {
+    padding: 0;
+}
+
+.tabelaEditavel .celulaEmEdicao input[type=text]{
+    width:100%;
+    border:0;
+    background-color:rgb(255,253,210);  
+}
+</style>
+</html>
